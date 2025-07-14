@@ -1,0 +1,186 @@
+2025-7-8 22:08:33 - log: Load engine in C:\ProgramData\cocos\editors\Creator\3.8.4\resources\resources\3d\engine
+2025-7-8 22:08:33 - log: Register native engine in C:\ProgramData\cocos\editors\Creator\3.8.4\resources\resources\3d\engine\native
+2025-7-8 22:08:34 - log: Request namespace: device-list
+2025-7-8 22:08:56 - log: [Scene] meshopt wasm decoder initialized
+2025-7-8 22:08:56 - log: [Scene] [box2d]:box2d wasm lib loaded.
+2025-7-8 22:08:56 - log: [Scene] [bullet]:bullet wasm lib loaded.
+2025-7-8 22:08:56 - log: [Scene] [PHYSICS]: using builtin.
+2025-7-8 22:08:56 - log: [Scene] Cocos Creator v3.8.4
+2025-7-8 22:08:56 - log: [Scene] Using custom pipeline: Builtin
+2025-7-8 22:08:57 - warn: [Scene] 你是否遗漏了扩展名？请注意你不能在模块说明符中省略扩展名。Error: [Scene] 你是否遗漏了扩展名？请注意你不能在模块说明符中省略扩展名。
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at logger (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:755:13)
+    at ExecutorSystem.resolve [as _detailResolve] (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:772:17)
+    at ExecutorSystem._resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:137:14)
+    at SystemJS.resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:36:23)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:355:37
+    at Array.map (<anonymous>)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:353:41
+2025-7-8 22:08:57 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: Error: 以 file:///E:/skynet_game_server/skynet_black/client/assets/scripts/network/NetworkManager.ts 为起点找不到模块 "../protocol/ProtocolManager"
+    at rejector (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:759:15)
+    at ExecutorSystem.resolve [as _detailResolve] (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:777:13)
+    at ExecutorSystem._resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:137:14)
+    at SystemJS.resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:36:23)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:355:37
+    at Array.map (<anonymous>)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:353:41Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: Error: 以 file:///E:/skynet_game_server/skynet_black/client/assets/scripts/network/NetworkManager.ts 为起点找不到模块 "../protocol/ProtocolManager"
+    at SystemJS.resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:36:23)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:355:37
+    at Array.map (<anonymous>)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:353:41
+    at Logger._logHandler (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\log.ccc:1:487)
+    at Logger.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:55:18)
+    at console.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:142:16)
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at ScriptManager._handleImportException (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:5195)
+    at Executor.importExceptionHandler [as _importExceptionHandler] (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3379)
+    at Executor._onModuleLoaded (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:359:22)
+    at SystemJS.onload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:96:18)
+    at triggerOnload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:270:10)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:431:7
+    at async Promise.all (index 2)
+    at file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:316:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:203:13)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1732)
+    at ScriptManager.init (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3569)
+    at EngineStartup.openEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\engine\index.ccc:1:4229)
+    at StartupManager.configEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:1668)
+    at StartupManager.initEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:2173)
+2025-7-8 22:08:57 - warn: [Scene] 你是否遗漏了扩展名？请注意你不能在模块说明符中省略扩展名。Error: [Scene] 你是否遗漏了扩展名？请注意你不能在模块说明符中省略扩展名。
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at logger (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:755:13)
+    at ExecutorSystem.resolve [as _detailResolve] (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:772:17)
+    at ExecutorSystem._resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:137:14)
+    at SystemJS.resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:36:23)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:355:37
+    at Array.map (<anonymous>)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:353:41
+    at file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:316:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:203:13)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1732)
+    at ScriptManager.init (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3569)
+    at EngineStartup.openEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\engine\index.ccc:1:4229)
+    at StartupManager.configEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:1668)
+    at StartupManager.initEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:2173)
+2025-7-8 22:08:57 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: Error: 以 file:///E:/skynet_game_server/skynet_black/client/assets/scripts/scenes/GameScene.ts 为起点找不到模块 "../protocol/ProtocolManager"
+    at rejector (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:759:15)
+    at ExecutorSystem.resolve [as _detailResolve] (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:777:13)
+    at ExecutorSystem._resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:137:14)
+    at SystemJS.resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:36:23)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:355:37
+    at Array.map (<anonymous>)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:353:41
+    at file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:316:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:203:13)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1732)
+    at ScriptManager.init (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3569)
+    at EngineStartup.openEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\engine\index.ccc:1:4229)
+    at StartupManager.configEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:1668)
+    at StartupManager.initEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:2173)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: Error: 以 file:///E:/skynet_game_server/skynet_black/client/assets/scripts/scenes/GameScene.ts 为起点找不到模块 "../protocol/ProtocolManager"
+    at SystemJS.resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:36:23)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:355:37
+    at Array.map (<anonymous>)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:353:41
+    at file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:316:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:203:13)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1732)
+    at ScriptManager.init (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3569)
+    at EngineStartup.openEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\engine\index.ccc:1:4229)
+    at StartupManager.configEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:1668)
+    at StartupManager.initEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:2173)
+    at Logger._logHandler (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\log.ccc:1:487)
+    at Logger.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:55:18)
+    at console.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:142:16)
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at ScriptManager._handleImportException (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:5195)
+    at Executor.importExceptionHandler [as _importExceptionHandler] (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3379)
+    at Executor._onModuleLoaded (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:359:22)
+    at SystemJS.onload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:96:18)
+    at triggerOnload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:270:10)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:431:7
+    at file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:316:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:203:13)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1732)
+    at ScriptManager.init (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3569)
+    at EngineStartup.openEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\engine\index.ccc:1:4229)
+    at StartupManager.configEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:1668)
+    at StartupManager.initEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:2173)
+2025-7-8 22:08:57 - warn: [Scene] 你是否遗漏了扩展名？请注意你不能在模块说明符中省略扩展名。Error: [Scene] 你是否遗漏了扩展名？请注意你不能在模块说明符中省略扩展名。
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at logger (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:755:13)
+    at ExecutorSystem.resolve [as _detailResolve] (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:772:17)
+    at ExecutorSystem._resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:137:14)
+    at SystemJS.resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:36:23)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:355:37
+    at Array.map (<anonymous>)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:353:41
+    at file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:316:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:203:13)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1732)
+    at ScriptManager.init (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3569)
+    at EngineStartup.openEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\engine\index.ccc:1:4229)
+    at StartupManager.configEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:1668)
+    at StartupManager.initEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:2173)
+2025-7-8 22:08:57 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: Error: 以 file:///E:/skynet_game_server/skynet_black/client/assets/scripts/scenes/LoginScene.ts 为起点找不到模块 "../protocol/ProtocolManager"
+    at rejector (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:759:15)
+    at ExecutorSystem.resolve [as _detailResolve] (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:777:13)
+    at ExecutorSystem._resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:137:14)
+    at SystemJS.resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:36:23)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:355:37
+    at Array.map (<anonymous>)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:353:41
+    at file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:316:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:203:13)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1732)
+    at ScriptManager.init (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3569)
+    at EngineStartup.openEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\engine\index.ccc:1:4229)
+    at StartupManager.configEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:1668)
+    at StartupManager.initEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:2173)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: Error: 以 file:///E:/skynet_game_server/skynet_black/client/assets/scripts/scenes/LoginScene.ts 为起点找不到模块 "../protocol/ProtocolManager"
+    at SystemJS.resolve (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\editor-systemjs\index.ts:36:23)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:355:37
+    at Array.map (<anonymous>)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:353:41
+    at file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:316:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:203:13)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1732)
+    at ScriptManager.init (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3569)
+    at EngineStartup.openEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\engine\index.ccc:1:4229)
+    at StartupManager.configEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:1668)
+    at StartupManager.initEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:2173)
+    at Logger._logHandler (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\log.ccc:1:487)
+    at Logger.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:55:18)
+    at console.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:142:16)
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at ScriptManager._handleImportException (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:5195)
+    at Executor.importExceptionHandler [as _importExceptionHandler] (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3379)
+    at Executor._onModuleLoaded (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:359:22)
+    at SystemJS.onload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:96:18)
+    at triggerOnload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:270:10)
+    at C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:431:7
+    at file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///E:/skynet_game_server/skynet_black/client/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:316:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:203:13)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1732)
+    at ScriptManager.init (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3569)
+    at EngineStartup.openEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\engine\index.ccc:1:4229)
+    at StartupManager.configEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:1668)
+    at StartupManager.initEngine (C:\ProgramData\cocos\editors\Creator\3.8.4\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\index.ccc:1:2173)
+2025-7-8 22:08:57 - log: [Scene] [PHYSICS]: switch from builtin to bullet.
+2025-7-8 22:08:57 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to box2d.

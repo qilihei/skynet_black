@@ -1,0 +1,31 @@
+{
+  "version": "3.8.0",
+  "name": "FarmGameClient",
+  "settings": {
+    "general": {
+      "designResolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "fitHeight": true,
+      "fitWidth": true
+    },
+    "rendering": {
+      "renderMode": 0,
+      "renderPipeline": "builtin-forward"
+    },
+    "physics": {
+      "enabled": false
+    },
+    "scripting": {
+      "typescript": true,
+      "strictMode": true
+    }
+  },
+  "packages": {
+    "cc": "3.8.0"
+  },
+  "dependencies": {
+    "protobufjs": "^7.2.5"
+  }
+}

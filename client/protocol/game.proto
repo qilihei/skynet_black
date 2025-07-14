@@ -1,0 +1,215 @@
+syntax = "proto3";
+
+package game.protocol;
+
+// ============================================================================
+// 基础消息包装器
+// ============================================================================
+
+// 消息包装器
+message MessageWrapper {
+    uint32 cmd = 1;           // 命令ID
+    uint32 seq = 2;           // 消息序列号
+    uint64 timestamp = 3;     // 时间戳
+    bytes data = 4;           // 具体消息数据(序列化后的protobuf)
+}
+
+// 响应包装器
+message ResponseWrapper {
+    uint32 cmd = 1;           // 命令ID
+    uint32 seq = 2;           // 对应请求的序列号
+    uint64 timestamp = 3;     // 时间戳
+    uint32 code = 4;          // 响应码
+    string message = 5;       // 响应消息
+    bytes data = 6;           // 响应数据(序列化后的protobuf)
+}
+
+// ============================================================================
+// 命令ID枚举
+// ============================================================================
+
+enum CommandId {
+    // 系统相关 1-99
+    CMD_HEARTBEAT = 0;
+    CMD_ANNOUNCEMENT = 1;
+    
+    // 登录相关 100-199
+    CMD_LOGIN_REQUEST = 100;
+    CMD_LOGOUT = 101;
+    
+    // 玩家相关 200-299
+    CMD_PLAYER_GET_INFO = 200;
+    CMD_PLAYER_UPDATE_POSITION = 201;
+    CMD_PLAYER_GET_INVENTORY = 202;
+    CMD_PLAYER_USE_ITEM = 203;
+    
+    // 农场相关 300-399
+    CMD_FARM_GET_INFO = 300;
+    CMD_FARM_PLANT_CROP = 301;
+    CMD_FARM_HARVEST_CROP = 302;
+    CMD_FARM_WATER_CROP = 303;
+}
+
+// ============================================================================
+// 基础数据结构
+// ============================================================================
+
+// 位置信息
+message Position {
+    float x = 1;
+    float y = 2;
+    uint32 map_id = 3;
+}
+
+// 物品信息
+message ItemInfo {
+    uint32 slot = 1;
+    uint32 item_id = 2;
+    uint32 quantity = 3;
+    map<string, string> attributes = 4;
+}
+
+// ============================================================================
+// 登录认证相关
+// ============================================================================
+
+// 登录请求
+message LoginRequest {
+    string username = 1;
+    string password = 2;
+    string client_version = 3;
+    string device_id = 4;
+    string platform = 5;
+}
+
+// 玩家基础信息
+message PlayerInfo {
+    uint64 id = 1;
+    string name = 2;
+    uint32 level = 3;
+    uint64 gold = 4;
+    uint32 energy = 5;
+    uint32 max_energy = 6;
+    uint32 avatar_id = 7;
+    float x_position = 8;
+    float y_position = 9;
+    uint32 map_id = 10;
+}
+
+// 登录响应
+message LoginResponse {
+    string session_token = 1;
+    PlayerInfo player_info = 2;
+    uint64 server_time = 3;
+    repeated string announcements = 4;
+}
+
+// 登出请求
+message LogoutRequest {
+    // 空消息
+}
+
+// 登出响应
+message LogoutResponse {
+    bool success = 1;
+}
+
+// 心跳请求
+message HeartbeatRequest {
+    uint64 client_time = 1;
+}
+
+// 心跳响应
+message HeartbeatResponse {
+    uint64 server_time = 1;
+    uint32 online_players = 2;
+}
+
+// ============================================================================
+// 玩家相关
+// ============================================================================
+
+// 获取玩家信息请求
+message GetPlayerInfoRequest {
+    uint64 player_id = 1;
+}
+
+// 获取玩家信息响应
+message GetPlayerInfoResponse {
+    PlayerInfo player_info = 1;
+    uint64 experience = 2;
+    Position position = 3;
+}
+
+// 更新玩家位置请求
+message UpdatePositionRequest {
+    float x = 1;
+    float y = 2;
+    uint32 map_id = 3;
+}
+
+// 更新玩家位置响应
+message UpdatePositionResponse {
+    Position new_position = 1;
+}
+
+// 获取背包信息请求
+message GetInventoryRequest {
+    // 空消息
+}
+
+// 获取背包信息响应
+message GetInventoryResponse {
+    repeated ItemInfo items = 1;
+    uint32 capacity = 2;
+    uint32 used_slots = 3;
+}
+
+// ============================================================================
+// 农场相关
+// ============================================================================
+
+// 农场地块信息
+message PlotInfo {
+    uint32 x = 1;
+    uint32 y = 2;
+    uint32 plot_type = 3;
+    uint32 crop_id = 4;
+    uint32 growth_stage = 5;
+    uint64 planted_at = 6;
+    bool watered = 7;
+    bool fertilized = 8;
+    uint32 quality = 9;
+}
+
+// 农场建筑信息
+message BuildingInfo {
+    uint32 x = 1;
+    uint32 y = 2;
+    uint32 building_id = 3;
+    uint32 level = 4;
+    uint32 status = 5;
+    uint64 last_upgrade_at = 6;
+}
+
+// 农场尺寸
+message FarmSize {
+    uint32 width = 1;
+    uint32 height = 2;
+}
+
+// 获取农场信息请求
+message GetFarmInfoRequest {
+    uint64 farm_id = 1;
+}
+
+// 获取农场信息响应
+message GetFarmInfoResponse {
+    uint64 farm_id = 1;
+    string name = 2;
+    uint32 level = 3;
+    FarmSize size = 4;
+    repeated PlotInfo plots = 5;
+    repeated BuildingInfo buildings = 6;
+    uint64 money_earned = 7;
+}

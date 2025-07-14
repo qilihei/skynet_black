@@ -1,0 +1,35 @@
+{
+  "./chunks/49/49f90ec7d60d2a824a5d4f1abef9020e60a967de.js": {
+    "__unresolved_2": {
+      "error": "Error: 以 file:///E:/skynet_game_server/skynet_black/client/assets/scripts/scenes/GameScene.ts 为起点找不到模块 \"../protocol/ProtocolManager\"",
+      "messages": [
+        {
+          "level": "warn",
+          "text": "你是否遗漏了扩展名？请注意你不能在模块说明符中省略扩展名。"
+        }
+      ]
+    }
+  },
+  "./chunks/52/52d8cc73f654e2055abaeba6127831f8defd86b4.js": {
+    "__unresolved_1": {
+      "error": "Error: 以 file:///E:/skynet_game_server/skynet_black/client/assets/scripts/network/NetworkManager.ts 为起点找不到模块 \"../protocol/ProtocolManager\"",
+      "messages": [
+        {
+          "level": "warn",
+          "text": "你是否遗漏了扩展名？请注意你不能在模块说明符中省略扩展名。"
+        }
+      ]
+    }
+  },
+  "./chunks/65/659451abb1b2357945dc26a139228d2c164da7d6.js": {
+    "__unresolved_2": {
+      "error": "Error: 以 file:///E:/skynet_game_server/skynet_black/client/assets/scripts/scenes/LoginScene.ts 为起点找不到模块 \"../protocol/ProtocolManager\"",
+      "messages": [
+        {
+          "level": "warn",
+          "text": "你是否遗漏了扩展名？请注意你不能在模块说明符中省略扩展名。"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,355 @@
+syntax = "proto3";
+
+package heartbridge;
+
+// 基础消息类型
+message ErrorResponse {
+    int32 code = 1;
+    string message = 2;
+}
+
+// 登录相关消息
+message LoginRequest {
+    string username = 1;
+    string password = 2;
+    string device_id = 3;
+}
+
+message LoginResponse {
+    bool success = 1;
+    string message = 2;
+    UserData user_data = 3;
+}
+
+message RegisterRequest {
+    string username = 1;
+    string password = 2;
+    string email = 3;
+}
+
+message RegisterResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+message LogoutRequest {
+    // 空消息
+}
+
+message LogoutResponse {
+    bool success = 1;
+}
+
+// 用户数据
+message UserData {
+    int64 user_id = 1;
+    string username = 2;
+    string session_id = 3;
+    int32 level = 4;
+    int64 exp = 5;
+    int64 coins = 6;
+    int64 gems = 7;
+}
+
+// 玩家相关消息
+message PlayerInfoRequest {
+    // 空消息
+}
+
+message PlayerInfoResponse {
+    int64 user_id = 1;
+    string username = 2;
+    string nickname = 3;
+    int32 avatar = 4;
+    int32 level = 5;
+    int64 exp = 6;
+    int64 exp_to_next = 7;
+    int64 coins = 8;
+    int64 gems = 9;
+    int32 energy = 10;
+    int32 max_energy = 11;
+    int64 last_energy_time = 12;
+    int64 create_time = 13;
+    int64 last_login_time = 14;
+}
+
+message ChangeNicknameRequest {
+    string nickname = 1;
+}
+
+message ChangeNicknameResponse {
+    bool success = 1;
+    string nickname = 2;
+}
+
+message ChangeAvatarRequest {
+    int32 avatar_id = 1;
+}
+
+message ChangeAvatarResponse {
+    bool success = 1;
+    int32 avatar_id = 2;
+}
+
+message BuyEnergyRequest {
+    // 空消息
+}
+
+message BuyEnergyResponse {
+    bool success = 1;
+    int32 energy = 2;
+    int32 gems_consumed = 3;
+}
+
+// 背包相关消息
+message ItemInfo {
+    int32 item_id = 1;
+    int32 quantity = 2;
+    int32 slot_id = 3;
+}
+
+message InventoryRequest {
+    // 空消息
+}
+
+message InventoryResponse {
+    int32 max_slots = 1;
+    int32 used_slots = 2;
+    repeated ItemInfo items = 3;
+}
+
+message UseItemRequest {
+    int32 item_id = 1;
+    int32 quantity = 2;
+}
+
+message UseItemResponse {
+    bool success = 1;
+    int32 item_id = 2;
+    int32 quantity_used = 3;
+    string effect = 4;
+}
+
+message SortInventoryRequest {
+    // 空消息
+}
+
+message SortInventoryResponse {
+    bool success = 1;
+}
+
+message ExpandInventoryRequest {
+    // 空消息
+}
+
+message ExpandInventoryResponse {
+    bool success = 1;
+    int32 new_max_slots = 2;
+}
+
+// 农场相关消息
+message PlotInfo {
+    int32 plot_id = 1;
+    int32 crop_id = 2;
+    string status = 3;
+    int64 plant_time = 4;
+    int32 water_level = 5;
+}
+
+message FarmInfoRequest {
+    // 空消息
+}
+
+message FarmInfoResponse {
+    int32 farm_level = 1;
+    int64 farm_exp = 2;
+    int32 max_plots = 3;
+    repeated PlotInfo plots = 4;
+}
+
+message PlantCropRequest {
+    int32 plot_id = 1;
+    int32 crop_id = 2;
+}
+
+message PlantCropResponse {
+    bool success = 1;
+    int32 plot_id = 2;
+    int32 crop_id = 3;
+    int64 plant_time = 4;
+}
+
+message HarvestCropRequest {
+    int32 plot_id = 1;
+}
+
+message HarvestCropResponse {
+    bool success = 1;
+    int32 plot_id = 2;
+    int32 yield_item_id = 3;
+    int32 yield_quantity = 4;
+    int32 exp_gained = 5;
+    int32 coins_gained = 6;
+}
+
+message WaterCropRequest {
+    int32 plot_id = 1;
+}
+
+message WaterCropResponse {
+    bool success = 1;
+    int32 plot_id = 2;
+}
+
+message ExpandFarmRequest {
+    // 空消息
+}
+
+message ExpandFarmResponse {
+    bool success = 1;
+    int32 new_max_plots = 2;
+}
+
+// 商店相关消息
+message ShopItem {
+    int32 item_id = 1;
+    int32 price = 2;
+    int32 currency_type = 3; // 1=coins, 2=gems
+    int32 stock = 4;
+}
+
+message ShopRequest {
+    // 空消息
+}
+
+message ShopResponse {
+    repeated ShopItem items = 1;
+}
+
+message BuyItemRequest {
+    int32 item_id = 1;
+    int32 quantity = 2;
+}
+
+message BuyItemResponse {
+    bool success = 1;
+    int32 item_id = 2;
+    int32 quantity = 3;
+    int32 total_cost = 4;
+}
+
+message SellItemRequest {
+    int32 item_id = 1;
+    int32 quantity = 2;
+}
+
+message SellItemResponse {
+    bool success = 1;
+    int32 item_id = 2;
+    int32 quantity = 3;
+    int32 total_earned = 4;
+}
+
+// 好友相关消息
+message FriendInfo {
+    int64 user_id = 1;
+    string username = 2;
+    string nickname = 3;
+    int32 level = 4;
+    int64 last_login_time = 5;
+    bool is_online = 6;
+}
+
+message FriendsRequest {
+    // 空消息
+}
+
+message FriendsResponse {
+    repeated FriendInfo friends = 1;
+}
+
+message AddFriendRequest {
+    string username = 1;
+}
+
+message AddFriendResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+message RemoveFriendRequest {
+    int64 friend_id = 1;
+}
+
+message RemoveFriendResponse {
+    bool success = 1;
+}
+
+// 聊天相关消息
+message ChatMessage {
+    int64 message_id = 1;
+    int64 sender_id = 2;
+    string sender_name = 3;
+    string content = 4;
+    int64 timestamp = 5;
+    int32 channel = 6; // 1=world, 2=friend, 3=guild
+}
+
+message SendChatRequest {
+    string content = 1;
+    int32 channel = 2;
+    int64 target_id = 3; // 私聊目标ID
+}
+
+message ChatHistoryRequest {
+    int32 channel = 1;
+    int32 count = 2;
+}
+
+message ChatHistoryResponse {
+    repeated ChatMessage messages = 1;
+}
+
+// 任务相关消息
+message QuestInfo {
+    int32 quest_id = 1;
+    string title = 2;
+    string description = 3;
+    int32 status = 4; // 0=available, 1=accepted, 2=completed
+    int32 progress = 5;
+    int32 target = 6;
+    repeated QuestReward rewards = 7;
+}
+
+message QuestReward {
+    int32 type = 1; // 1=item, 2=coins, 3=exp, 4=gems
+    int32 item_id = 2;
+    int32 quantity = 3;
+}
+
+message QuestsRequest {
+    // 空消息
+}
+
+message QuestsResponse {
+    repeated QuestInfo quests = 1;
+}
+
+message AcceptQuestRequest {
+    int32 quest_id = 1;
+}
+
+message AcceptQuestResponse {
+    bool success = 1;
+    int32 quest_id = 2;
+}
+
+message CompleteQuestRequest {
+    int32 quest_id = 1;
+}
+
+message CompleteQuestResponse {
+    bool success = 1;
+    int32 quest_id = 2;
+    repeated QuestReward rewards = 3;
+}

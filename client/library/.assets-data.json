@@ -1,0 +1,67 @@
+{
+  "2792ed36-bc6a-43f4-abaa-2bea1563cb2e": {
+    "url": "db://assets/scripts",
+    "value": {},
+    "versionCode": 1
+  },
+  "0773b914-3435-4239-9c5b-b73ab5f31ec7": {
+    "url": "db://assets/scripts/managers",
+    "value": {},
+    "versionCode": 1
+  },
+  "c2c8a69c-da0b-4927-9472-fc4f970bd5c2": {
+    "url": "db://assets/scripts/network",
+    "value": {},
+    "versionCode": 1
+  },
+  "27a7af08-3f57-44c5-adf2-1f0409a0f849": {
+    "url": "db://assets/scripts/scenes",
+    "value": {},
+    "versionCode": 1
+  },
+  "3008be92-ca02-4ff2-941d-2a89eb7f19c4": {
+    "url": "db://assets/scripts/ui",
+    "value": {},
+    "versionCode": 1
+  },
+  "2767e210-11c6-4e35-9d62-7381495f2192": {
+    "url": "db://assets/scripts/GameApp.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "c28bd8bf-61c9-4809-b9f2-b753d775dc86": {
+    "url": "db://assets/scripts/managers/EventManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "a19b9df0-7c6a-42c7-8201-4ce53be33cce": {
+    "url": "db://assets/scripts/managers/GameDataManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "0f1202f3-be86-4734-94d7-ef66108e5caa": {
+    "url": "db://assets/scripts/managers/SceneManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "4538399f-6efb-4414-9c8a-dfec6bcb5e9a": {
+    "url": "db://assets/scripts/network/NetworkManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "395a3360-db3f-4d03-a814-fa58ce113660": {
+    "url": "db://assets/scripts/scenes/GameScene.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "f8f43e3e-6365-4f0f-8fc4-be09d5f3cb5a": {
+    "url": "db://assets/scripts/scenes/LoginScene.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "8110ae52-e3d6-410e-bbde-101e38b60d19": {
+    "url": "db://assets/scripts/ui/UIManager.ts",
+    "value": {},
+    "versionCode": 1
+  }
+}

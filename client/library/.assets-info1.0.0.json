@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "map": {
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts": {
+      "time": 1751983730984.5154,
+      "uuid": "2792ed36-bc6a-43f4-abaa-2bea1563cb2e"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\managers": {
+      "time": 1751983730984.5154,
+      "uuid": "0773b914-3435-4239-9c5b-b73ab5f31ec7"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\network": {
+      "time": 1751983730985.517,
+      "uuid": "c2c8a69c-da0b-4927-9472-fc4f970bd5c2"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\scenes": {
+      "time": 1751983730985.517,
+      "uuid": "27a7af08-3f57-44c5-adf2-1f0409a0f849"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\ui": {
+      "time": 1751983730986.5159,
+      "uuid": "3008be92-ca02-4ff2-941d-2a89eb7f19c4"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\GameApp.ts": {
+      "time": 1751911447014.4746,
+      "uuid": "2767e210-11c6-4e35-9d62-7381495f2192"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\managers\\EventManager.ts": {
+      "time": 1751911253332.6328,
+      "uuid": "c28bd8bf-61c9-4809-b9f2-b753d775dc86"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\managers\\GameDataManager.ts": {
+      "time": 1751911304259.6528,
+      "uuid": "a19b9df0-7c6a-42c7-8201-4ce53be33cce"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\managers\\SceneManager.ts": {
+      "time": 1751911272800.9673,
+      "uuid": "0f1202f3-be86-4734-94d7-ef66108e5caa"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\network\\NetworkManager.ts": {
+      "time": 1751911234243.8694,
+      "uuid": "4538399f-6efb-4414-9c8a-dfec6bcb5e9a"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\scenes\\GameScene.ts": {
+      "time": 1751911410806.8003,
+      "uuid": "395a3360-db3f-4d03-a814-fa58ce113660"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\scenes\\LoginScene.ts": {
+      "time": 1751911342633.0916,
+      "uuid": "f8f43e3e-6365-4f0f-8fc4-be09d5f3cb5a"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\ui\\UIManager.ts": {
+      "time": 1751911485227.4768,
+      "uuid": "8110ae52-e3d6-410e-bbde-101e38b60d19"
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts.meta": {
+      "time": 1751983730987.5156
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\managers.meta": {
+      "time": 1751983730987.5156
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\network.meta": {
+      "time": 1751983730988.5166
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\scenes.meta": {
+      "time": 1751983730988.5166
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\ui.meta": {
+      "time": 1751983730988.5166
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\GameApp.ts.meta": {
+      "time": 1751983730996.1018
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\managers\\EventManager.ts.meta": {
+      "time": 1751983730996.1018
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\managers\\GameDataManager.ts.meta": {
+      "time": 1751983730996.1018
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\managers\\SceneManager.ts.meta": {
+      "time": 1751983730997.1006
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\network\\NetworkManager.ts.meta": {
+      "time": 1751983730997.1006
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\scenes\\GameScene.ts.meta": {
+      "time": 1751983730999.1013
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\scenes\\LoginScene.ts.meta": {
+      "time": 1751983730999.1013
+    },
+    "E:\\skynet_game_server\\skynet_black\\client\\assets\\scripts\\ui\\UIManager.ts.meta": {
+      "time": 1751983730999.1013
+    }
+  },
+  "missing": {}
+}
