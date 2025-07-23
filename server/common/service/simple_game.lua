@@ -255,10 +255,8 @@ end
 -- 服务启动
 skynet.start(function()
     game.init()
-    
     -- 启动游戏逻辑循环
     skynet.fork(game.game_loop)
-    
     skynet.dispatch("lua", function(session, address, cmd, ...)
         local f = CMD[cmd]
         if f then

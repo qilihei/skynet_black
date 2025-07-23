@@ -55,9 +55,9 @@ skynet.start(
         local gateway = skynet.uniqueservice("simple_gateway")
         
         -- 配置网关监听
-        local port = tonumber(skynet.getenv("port")) or 44445
-        local max_client = tonumber(skynet.getenv("maxclient")) or 10000
-        local host = skynet.getenv("host") or "0.0.0.0"
+        local port = tonumber(skynet.getenv("port"))
+        local max_client = tonumber(skynet.getenv("maxclient"))
+        local host = skynet.getenv("host")
         
         skynet.call(gateway, "lua", "start", {
             host = host,

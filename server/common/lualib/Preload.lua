@@ -20,11 +20,10 @@ end
 -- 在保护模式下执行预加载逻辑
 local function safe_preload()
     -- 这里可以添加全局初始化代码
-    skynet.error("游戏名称: " .. _G.GAME_NAME)
-    skynet.error("游戏版本: " .. _G.GAME_VERSION)
-    skynet.error("调试模式: " .. tostring(_G.DEBUG_MODE))
-    
     -- 可以在这里预加载配置文件、初始化全局变量等
+    -- todo hei 预加载配置文件
+    -- local config = require "config"
+    -- config.init()
     
     return true
 end
